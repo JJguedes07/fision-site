@@ -1,124 +1,131 @@
-
-:root {
-  --verde-claro: #96D8A2;
-  --verde-escuro: #003B2F;
-  --azul-profundo: #164B63;
-  --cinza-fundo: #f4f7f8;
-  --branco: #ffffff;
-}
-
+/* Reset básico */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Inter', sans-serif;
-  background-color: var(--cinza-fundo);
-  color: var(--azul-profundo);
-  line-height: 1.7;
-  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
 }
 
+/* Cabeçalho */
 header {
-  background-color: var(--verde-escuro);
-  color: var(--branco);
   text-align: center;
-  padding: 3rem 1rem 2rem;
+  padding: 30px 20px;
+  background-color: #f0f4f8;
+  border-bottom: 1px solid #ddd;
 }
 
-header img {
-  max-width: 160px;
-  margin-bottom: 1rem;
+.logo {
+  width: 120px;
+  margin-bottom: 15px;
 }
 
 header h1 {
-  font-size: 2.2rem;
-  font-weight: 600;
+  font-size: 24px;
+  color: #2c3e50;
 }
 
 header p {
-  font-size: 1rem;
-  opacity: 0.9;
+  font-size: 16px;
+  color: #555;
 }
 
+/* Seções */
 section {
-  background-color: var(--branco);
-  margin: 2rem auto;
-  padding: 2rem 1.5rem;
-  max-width: 900px;
-  border-radius: 12px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
 }
 
 section h2 {
-  font-size: 1.5rem;
-  color: var(--verde-escuro);
-  margin-bottom: 1rem;
-  border-left: 5px solid var(--verde-claro);
-  padding-left: 0.6rem;
-}
-
-section ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-section ul li {
-  margin-bottom: 0.8rem;
-  font-size: 1.05rem;
+  font-size: 22px;
+  color: #0077b6;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .imagem-section {
   width: 100%;
-  max-width: 700px;
-  margin-top: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
-.contato p strong {
-  color: var(--verde-escuro);
+ul {
+  list-style: none;
+  padding-left: 0;
 }
 
-.whatsapp-btn {
-  display: inline-block;
-  margin: 2rem auto;
-  background-color: var(--verde-claro);
-  color: var(--verde-escuro);
-  font-weight: 600;
-  padding: 1rem 1.8rem;
-  border-radius: 32px;
+ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+ul li i {
+  color: #38b000;
+  margin-right: 8px;
+}
+
+/* Contato */
+.contato p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.contato a {
+  color: #0077b6;
   text-decoration: none;
-  text-align: center;
-  transition: background 0.3s;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
-.whatsapp-btn:hover {
-  background-color: #7fc08b;
+.botao-whatsapp {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #25d366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s;
 }
 
+.botao-whatsapp:hover {
+  background-color: #1ebe5d;
+}
+
+/* Rodapé */
 footer {
   text-align: center;
-  padding: 2rem 1rem;
-  font-size: 0.9rem;
-  color: #555;
+  padding: 20px;
+  background-color: #f0f4f8;
+  font-size: 14px;
+  color: #777;
 }
 
-@media (max-width: 768px) {
+/* Responsivo */
+@media (max-width: 600px) {
   header h1 {
-    font-size: 1.8rem;
+    font-size: 20px;
   }
 
-  section {
-    padding: 1.5rem 1rem;
-    margin: 1.5rem;
+  .logo {
+    width: 100px;
   }
 
-  .whatsapp-btn {
-    padding: 0.9rem 1.4rem;
-    font-size: 0.95rem;
+  section h2 {
+    font-size: 20px;
+  }
+
+  .botao-whatsapp {
+    width: 100%;
+    text-align: center;
   }
 }
