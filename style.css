@@ -1,0 +1,124 @@
+
+:root {
+  --verde-claro: #96D8A2;
+  --verde-escuro: #003B2F;
+  --azul-profundo: #164B63;
+  --cinza-fundo: #f4f7f8;
+  --branco: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--cinza-fundo);
+  color: var(--azul-profundo);
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+header {
+  background-color: var(--verde-escuro);
+  color: var(--branco);
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+}
+
+header img {
+  max-width: 160px;
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+header p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+section {
+  background-color: var(--branco);
+  margin: 2rem auto;
+  padding: 2rem 1.5rem;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+  font-size: 1.5rem;
+  color: var(--verde-escuro);
+  margin-bottom: 1rem;
+  border-left: 5px solid var(--verde-claro);
+  padding-left: 0.6rem;
+}
+
+section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+section ul li {
+  margin-bottom: 0.8rem;
+  font-size: 1.05rem;
+}
+
+.imagem-section {
+  width: 100%;
+  max-width: 700px;
+  margin-top: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.contato p strong {
+  color: var(--verde-escuro);
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  margin: 2rem auto;
+  background-color: var(--verde-claro);
+  color: var(--verde-escuro);
+  font-weight: 600;
+  padding: 1rem 1.8rem;
+  border-radius: 32px;
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.3s;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.whatsapp-btn:hover {
+  background-color: #7fc08b;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  section {
+    padding: 1.5rem 1rem;
+    margin: 1.5rem;
+  }
+
+  .whatsapp-btn {
+    padding: 0.9rem 1.4rem;
+    font-size: 0.95rem;
+  }
+}
